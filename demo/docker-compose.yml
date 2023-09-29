@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./myapp
+    ports:
+      - "3000:3000"
+  backend:
+    build:
+      context: ./demo
+    ports:
+      - "8081:8081"
+
